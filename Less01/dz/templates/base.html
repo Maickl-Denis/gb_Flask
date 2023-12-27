@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="/clothes">Одежда</a>></li>
+            <li> <a href="/shoes">Обувь</a>></li>
+            <li> <a href="/jacket">Куртка</a>></li>
+        </ul>
+    </nav>
+    <header>
+        {% block content %}
+        {% endblock %}
+
+    </header>
+
+    <footer>
+        <p> Все права защищены мною </p>
+    </footer>
+
+</body>
+</html>
