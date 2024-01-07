@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="clothes">
+    <table class="clot">
+        <tr>
+    {% for item in store %}
+            <td height="300">
+                <h1>{{item['name']}}<br></h1>
+                <img width="300" src="{{item['src']}}">
+                <p>
+                  Стоймость {{ item['price'] }} руб
+                </p>
+            </td>
+    {% endfor %}
+        </tr>
+    </table>
+</div>
+{% endblock %}
